@@ -1,0 +1,13 @@
+mkdir shelby
+cd shelby
+touch README
+touch fizz.txt
+touch buzz.txt
+touch deleteme.txt
+echo fizzbuzz > README
+mkdir texts
+mv *.txt texts
+rm texts/deleteme.txt 
+mkdir texts/news 
+curl http://www.nytimes.com/ > ./texts/news/times.txt
+grep America http://www.nytimes.com > ./texts/news/National.txt
